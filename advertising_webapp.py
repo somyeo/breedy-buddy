@@ -4,6 +4,8 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import matplotlib
+matplotlib.use('Agg')  # 이 줄을 추가하여 백엔드를 설정합니다.
 import matplotlib.pyplot as plt
 import ai_wonder as wonder
 
@@ -52,4 +54,3 @@ if __name__ == "__main__":
             st.info("피처 중요도")
             importances = pd.DataFrame(wonder.local_explanations(state, point), columns=["피처", "값", "중요도"])
             st.dataframe(importances.round(2))
-
