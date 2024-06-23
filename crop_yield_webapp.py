@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+pip show matplotlib
 # 패키지 가져오기
 import streamlit as st
 import pandas as pd
