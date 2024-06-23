@@ -4,9 +4,12 @@
 import streamlit as st
 import pandas as pd
 import pickle
+
+# matplotlib 백엔드를 설정합니다.
 import matplotlib
-matplotlib.use('Agg')  # 이 줄을 추가하여 백엔드를 설정합니다.
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+
 import ai_wonder as wonder
 
 # 로더 함수
@@ -19,7 +22,7 @@ def load_context(dataname):
 # 드라이버 함수
 if __name__ == "__main__":
     # 스트림릿 인터페이스
-    st.subheader(f"Advertising 'sales' 예측기")
+    st.subheader("Advertising 'sales' 예측기")
     st.markdown(":blue[**AI Wonder**] 제공")
 
     # 사용자 입력
