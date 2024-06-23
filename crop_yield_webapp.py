@@ -54,4 +54,3 @@ if __name__ == "__main__":
             st.info("피처 중요도")
             importances = pd.DataFrame(wonder.local_explanations(state, point), columns=["피처", "값", "중요도"])
             st.dataframe(importances.round(2))
-
