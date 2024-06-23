@@ -4,6 +4,8 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import matplotlib
+matplotlib.use('Agg')  # 이 줄을 추가
 import matplotlib.pyplot as plt
 import ai_wonder as wonder
 
